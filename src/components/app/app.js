@@ -116,14 +116,14 @@ export default class App extends Component {
                         onFilterSelect={this.onFilterSelect}
                     />
                 </div>
+                <PostAddForm
+                    onAdd={this.addItem}
+                />
                 <PostList
                     posts={visiblePosts}
                     onDelete={this.deleteItem}
                     onToggleImportant={this.onToggleImportant}
                     onToggleLiked={this.onToggleLiked}
-                />
-                <PostAddForm
-                    onAdd={this.addItem}
                 />
             </div>
         )
